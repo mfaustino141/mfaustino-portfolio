@@ -43,6 +43,10 @@ body, html {
     text-decoration: none;
 }
 
+/* #home img {
+    position: absolute;
+} */
+
 .content {
     flex-grow: 1;
     margin-left: 30%;
@@ -56,20 +60,18 @@ body, html {
 }
 
 #home {
-    position: relative;
-    text-align: center;
+    margin: 380px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-#home img {
-    position: absolute;
-}
 
-.centered-text {
+/* .centered-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .project {
     background-color: #f4f4f4;
