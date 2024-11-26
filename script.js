@@ -19,3 +19,10 @@ document.getElementById('toggle-btn').addEventListener('click', function() {
         document.body.classList.remove('sidebar-visible');  // Show scrollbar again
     }
 });
+
+function scrollToSection() {
+    const aboutSection = document.getElementById('about');
+
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+}
+

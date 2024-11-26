@@ -16,7 +16,7 @@
         <h1>Maggie Faustino</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -26,12 +26,12 @@
     </div>
     <div id="greeting">
         <img src="images/clearer-background.webp" alt="" id="background-image">
-        <!-- <section id="home" class="section"> -->
-            <div class="centered-text">
-                <h2>Hi, I'm Maggie!</h2>
-                <p>Hello and welcome! I'm a passionate web developer dedicated to creating beautiful and functional websites. Explore my portfolio to learn more about me and my work. Probably put a little more here.</p>
-            </div>
-        <!-- </section> -->
+        <div class="overlay"></div>
+        <div class="centered-text">
+            <h2>Hi, I'm Maggie!</h2>
+            <p>Hello and welcome! I'm a passionate web developer dedicated to creating beautiful and functional websites.</p>
+            <button id="portfolio-btn" aria-label="Explore my portfolio!" onclick="scrollToSection()">Explore my portfolio!</button>
+        </div>
     </div>
     <div class="container">
         <div class="content">
@@ -42,13 +42,15 @@
 
             <section id="projects" class="section">
                 <h2>My Projects</h2>
-                <div class="project">
-                    <h3>Atlanta Food Finder Project</h3>
-                    <p>Collaborated with a team to design and develop a full-stack web application for discovering restaurants in Atlanta. The project involved building a user-friendly interface that allowed users to search for restaurants, view details such as address, cuisine type, ratings, and hours, and access an interactive map for directions. Integrated a review system for user feedback, and applied Agile methodologies to ensure efficient collaboration and project management throughout the development process.</p>
-                </div>
-                <div class="project">
-                    <h3>Spotify Wrapped Project</h3>
-                    <p>Focuses on creating an engaging web application that generates personalized Spotify Wrapped summaries for users. The app allows users to log in via their Spotify accounts, view their music listening habits, and access colorful and detailed presentations of their musical tastes. It includes a "Spotify Heardle" game where players can guess songs from short audio snippets, offering an interactive and fun experience. Users can create accounts, save their past Spotify Wrapped data, and manage it by viewing, deleting, or accessing previous summaries. The project also incorporates a responsive user interface designed to be aesthetically pleasing and adaptable to different screen sizes, ensuring that the app provides a smooth experience across devices. Agile methodologies are applied for team collaboration, ensuring efficient project management and smooth development.</p>
+                <div class="card-container" id="project-cards">
+                    <div class="project">
+                        <h3>Atlanta Food Finder Project</h3>
+                        <p>Collaborated with a team to design and develop a full-stack web application for discovering restaurants in Atlanta. The project involved building a user-friendly interface that allowed users to search for restaurants, view details such as address, cuisine type, ratings, and hours, and access an interactive map for directions. Integrated a review system for user feedback, and applied Agile methodologies to ensure efficient collaboration and project management throughout the development process.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Spotify Wrapped Project</h3>
+                        <p>Focuses on creating an engaging web application that generates personalized Spotify Wrapped summaries for users. The app allows users to log in via their Spotify accounts, view their music listening habits, and access colorful and detailed presentations of their musical tastes. It includes a "Spotify Heardle" game where players can guess songs from short audio snippets, offering an interactive and fun experience. Users can create accounts, save their past Spotify Wrapped data, and manage it by viewing, deleting, or accessing previous summaries. The project also incorporates a responsive user interface designed to be aesthetically pleasing and adaptable to different screen sizes, ensuring that the app provides a smooth experience across devices. Agile methodologies are applied for team collaboration, ensuring efficient project management and smooth development.</p>
+                    </div>
                 </div>
             </section>
 
@@ -68,7 +70,7 @@
                         <p>Cumulative GPA: 4.0/4.0</p>
                     </div>
                 </div>
-                <div class="resume-section">
+                <!-- <div class="resume-section">
                     <h3>Work Experience</h3>
                     <div class="resume-item">
                         <h4>Job Title</h4>
@@ -79,13 +81,32 @@
                             <li>Responsibility or achievement 3</li>
                         </ul>
                     </div>
+                </div> -->
+                <div class="resume-section">
+                    <h3>Campus and Community Involvement</h3>
+                    <div class="resume-item">
+                        <h4>Cru Club</h4>
+                        <p>DESCRIPTION HERE</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Knit n' Crochet Club</h4>
+                        <p>DESCRIPTION HERE</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Volleyball Club</h4>
+                        <p>DESCRIPTION HERE</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Spikeball Club</h4>
+                        <p>DESCRIPTION HERE</p>
+                    </div>
                 </div>
                 <div class="resume-section">
-                    <h3>Skills</h3>
+                    <h3>Awards</h3>
                     <ul>
-                        <li>Skill 1</li>
-                        <li>Skill 2</li>
-                        <li>Skill 3</li>
+                        <li>2024 - Biodiversity Project Finalist by ADHC First-Year Seminar Biodiversity Initiatives, for proposing and presenting innovative 
+                            solutions and demonstrating a commitment to environmental sustainability </li>
+                        <li>2023 - James Casey National Merit Scholarship recipient from UPS</li>
                     </ul>
                 </div>
             </section>
