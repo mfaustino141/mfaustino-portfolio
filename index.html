@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <button id="toggle-btn" aria-label="Toggle sidebar">
@@ -19,7 +22,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -36,83 +39,60 @@
     <div class="container">
         <div class="content">
             <section id="about" class="section">
-                <h2>About Me</h2>
+                <div class="section-title">
+                    <h1>About Me</h1>
+                </div>
                 <p>I'm a web developer with experience in HTML, CSS, and JavaScript. I'm passionate about creating user-friendly and visually appealing websites that solve real-world problems. In addition to my love for web development, I am deeply passionate about digital art and storytelling. I believe in the power of design to communicate ideas, evoke emotions, and create meaningful experiences. By blending my technical skills with my creative interests, I aim to craft websites that not only look great but also tell a compelling story, engaging users in unique and imaginative ways.</p>
             </section>
 
             <section id="projects" class="section">
-                <h2>My Projects</h2>
+                <div class="section-title">
+                    <h1>My Projects</h1>
+                </div>
                 <div class="card-container" id="project-cards">
                     <div class="project">
                         <h3>Atlanta Food Finder Project</h3>
                         <p>Collaborated with a team to design and develop a full-stack web application for discovering restaurants in Atlanta. The project involved building a user-friendly interface that allowed users to search for restaurants, view details such as address, cuisine type, ratings, and hours, and access an interactive map for directions. Integrated a review system for user feedback, and applied Agile methodologies to ensure efficient collaboration and project management throughout the development process.</p>
+                        <div class="img-carousel">
+                            <button class="arrow left" onclick="previousImage()">&#10094;</button>
+                            <div class="image-container">
+                                <img src="images/AFF-Home.webp" alt="Atlanta Food Finder Main Image of Home">
+                                <img src="images/AFF-Map.webp" alt="Atlanta Food Finder Map">
+                                <img src="images/AFF-Summary.webp" alt="Atlanta Food Finder Summary Page">
+                                <img src="images/AFF-Login.avif" alt="Atlanta Food Finder Login Page">
+                            </div>
+                            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+                        </div>
                     </div>
                     <div class="project">
                         <h3>Spotify Wrapped Project</h3>
                         <p>Focuses on creating an engaging web application that generates personalized Spotify Wrapped summaries for users. The app allows users to log in via their Spotify accounts, view their music listening habits, and access colorful and detailed presentations of their musical tastes. It includes a "Spotify Heardle" game where players can guess songs from short audio snippets, offering an interactive and fun experience. Users can create accounts, save their past Spotify Wrapped data, and manage it by viewing, deleting, or accessing previous summaries. The project also incorporates a responsive user interface designed to be aesthetically pleasing and adaptable to different screen sizes, ensuring that the app provides a smooth experience across devices. Agile methodologies are applied for team collaboration, ensuring efficient project management and smooth development.</p>
+                        <div class="img-carousel">
+                            <button class="arrow left" onclick="previousImage()">&#10094;</button>
+                            <div class="image-container">
+                                <p>IMAGES COMING SOON WE'RE NOT DONE WITH THE PROJECT YET!</p>
+                            </div>
+                            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="resume" class="section">
-                <h2>Resume</h2>
-                <div class="resume-section">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <h4>Bachelor of Science in Computational Media, Concentration: Interaction Design</h4>
-                        <p>Georgia Institute of Technology, 2024-2027</p>
-                        <p>Honors Program</p>
+                    <div class="project">
+                        <h3>EXAMPLE Project</h3>
+                        <p>I made this entire card to see what more cards would look like. I'm gonna fill up this space a little. We come here... for magic. We come to AMC theaters to laugh, to cry, to care. Because we need that. All of us. That indescribable feeling we get when the lights begin to dim. And we go somewhere we've never been before. Sound that you can feel. Somehow, heartbreak feels good in a place like this. Something something, that was the whole speech off the top of my head.</p>
+                        <div class="img-carousel">
+                            <button class="arrow left" onclick="previousImage()">&#10094;</button>
+                            <div class="image-container">
+                                <p>NO IMAGES FOR THIS ONE!!</p>
+                            </div>
+                            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+                        </div>
                     </div>
-                    <div class="resume-item">
-                        <h4>Bachelor of Science in Computer Science</h4>
-                        <p>New Jersey Institue of Technology 2023-2024</p>
-                        <p>Albert Dorman Honors College - Full Tuition Merit Scholarship</p>
-                        <p>Cumulative GPA: 4.0/4.0</p>
-                    </div>
-                </div>
-                <!-- <div class="resume-section">
-                    <h3>Work Experience</h3>
-                    <div class="resume-item">
-                        <h4>Job Title</h4>
-                        <p>Company Name, Employment Period</p>
-                        <ul>
-                            <li>Responsibility or achievement 1</li>
-                            <li>Responsibility or achievement 2</li>
-                            <li>Responsibility or achievement 3</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="resume-section">
-                    <h3>Campus and Community Involvement</h3>
-                    <div class="resume-item">
-                        <h4>Cru Club</h4>
-                        <p>DESCRIPTION HERE</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Knit n' Crochet Club</h4>
-                        <p>DESCRIPTION HERE</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Volleyball Club</h4>
-                        <p>DESCRIPTION HERE</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Spikeball Club</h4>
-                        <p>DESCRIPTION HERE</p>
-                    </div>
-                </div>
-                <div class="resume-section">
-                    <h3>Awards</h3>
-                    <ul>
-                        <li>2024 - Biodiversity Project Finalist by ADHC First-Year Seminar Biodiversity Initiatives, for proposing and presenting innovative 
-                            solutions and demonstrating a commitment to environmental sustainability </li>
-                        <li>2023 - James Casey National Merit Scholarship recipient from UPS</li>
-                    </ul>
                 </div>
             </section>
 
             <section id="contact" class="section">
-                <h2>Contact Me</h2>
+                <div class="section-title">
+                    <h1>Contact Me</h1>
+                </div>
                 <p>Email: your.email@example.com</p>
                 <p>LinkedIn: linkedin.com/in/yourprofile</p>
                 <p>GitHub: github.com/yourusername</p>
